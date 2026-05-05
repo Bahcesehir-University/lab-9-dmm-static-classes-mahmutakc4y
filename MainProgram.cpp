@@ -141,7 +141,7 @@ IntArray::IntArray(int cap) {
 IntArray::~IntArray() {
     // TODO 7: Free the dynamic array using 'delete[]'
     delete[] data;
-    Tracker::objectCreated();
+    Tracker::objectDestroyed();
     //         Notify Tracker that an object was destroyed
 
 }
